@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Swagger-Codegen", "Marco"]
   s.email       = ["support@ulama.io", "marco@bon.so"]
-  s.homepage    = "https://github.com/adamaxacademy/ulama-api"
+  s.homepage    = "https://github.com/adamax-academy/ulama-api"
   s.summary     = "Ulama.io API Ruby Gem"
   s.description = "Ulama API"
   s.license     = "Unlicense"
