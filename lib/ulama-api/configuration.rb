@@ -127,7 +127,6 @@ module UlamaApi
     def initialize
       @scheme = 'https'
       @host = 'api.ulama.io'
-      @base_path = 'https://api.ulama.io'
       @api_key = {}
       @api_key_prefix = {}
       @timeout = 0
