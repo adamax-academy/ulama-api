@@ -16,7 +16,7 @@ module UlamaApi
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [User]
@@ -25,7 +25,7 @@ module UlamaApi
       data
     end
 
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [Array<(User, Integer, Hash)>] User data, response status code and response headers
@@ -59,9 +59,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] || @api_client.object_to_http_body(body) 
+      post_body = opts[:body] || @api_client.object_to_http_body(body)
 
-      return_type = opts[:return_type] || 'User' 
+      return_type = opts[:return_type] || 'User'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
@@ -77,7 +77,7 @@ module UlamaApi
       end
       return data, status_code, headers
     end
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [nil]
@@ -86,7 +86,7 @@ module UlamaApi
       nil
     end
 
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
@@ -118,9 +118,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] || @api_client.object_to_http_body(body) 
+      post_body = opts[:body] || @api_client.object_to_http_body(body)
 
-      return_type = opts[:return_type] 
+      return_type = opts[:return_type]
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
@@ -181,9 +181,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Abandon>' 
+      return_type = opts[:return_type] || 'Array<Abandon>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -234,9 +234,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Admin>' 
+      return_type = opts[:return_type] || 'Array<Admin>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -280,9 +280,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Authoirize>' 
+      return_type = opts[:return_type] || 'Array<Authoirize>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -333,9 +333,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Carts>' 
+      return_type = opts[:return_type] || 'Array<Carts>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -386,9 +386,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Products>' 
+      return_type = opts[:return_type] || 'Array<Products>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -448,9 +448,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Orders>' 
+      return_type = opts[:return_type] || 'Array<Orders>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -501,9 +501,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Payments>' 
+      return_type = opts[:return_type] || 'Array<Payments>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -522,7 +522,7 @@ module UlamaApi
     # @param website ID Website
     # @param email Email to search
     # @param [Hash] opts the optional parameters
-    # @return [User]
+    # @return [Array<User>]
     def get_user(website, email, opts = {})
       data, _status_code, _headers = get_user_with_http_info(website, email, opts)
       data
@@ -561,9 +561,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'User' 
+      return_type = opts[:return_type] || 'Array<User>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -630,9 +630,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<UsersPercentage>' 
+      return_type = opts[:return_type] || 'Array<UsersPercentage>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -676,9 +676,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] 
+      post_body = opts[:body]
 
-      return_type = opts[:return_type] || 'Array<Websited>' 
+      return_type = opts[:return_type] || 'Array<Websited>'
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -694,7 +694,7 @@ module UlamaApi
       end
       return data, status_code, headers
     end
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [nil]
@@ -703,7 +703,7 @@ module UlamaApi
       nil
     end
 
-    # @param body 
+    # @param body
     # @param website ID Website
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
@@ -735,9 +735,9 @@ module UlamaApi
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:body] || @api_client.object_to_http_body(body) 
+      post_body = opts[:body] || @api_client.object_to_http_body(body)
 
-      return_type = opts[:return_type] 
+      return_type = opts[:return_type]
 
       auth_names = opts[:auth_names] || ['apiKey']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
