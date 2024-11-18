@@ -38,7 +38,7 @@ module UlamaApi
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'id' => :'Object',
+        :'id' => :'Integer',
         :'email' => :'Object',
         :'name' => :'Object',
         :'external' => :'Object'
@@ -50,7 +50,7 @@ module UlamaApi
       Set.new([
       ])
     end
-  
+
     # Initializes the object
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})

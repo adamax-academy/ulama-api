@@ -10,5 +10,5 @@ Swagger Codegen version: 3.0.55
 =end
 
 module UlamaApi
-  VERSION = '1.0.1'
+  VERSION = '1.0.2'
 end
